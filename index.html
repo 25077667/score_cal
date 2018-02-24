@@ -2,7 +2,12 @@
 	<head>    
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title> 成績換算 </title>
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<link href="bootstrap.min.css" rel="stylesheet"><link href="cover.css" rel="stylesheet">
+
 		<script type="text/javascript">
     	function calculate()
     	{
@@ -59,21 +64,32 @@
 	</head>
 	
     <body>
-    國文<input id="Chinese" type="number" maxlength="2" min="0" max="15" value="0"/>
-    英文<input id="English"type="number" maxlength="2" min="0" max="15" value="0"/>
-    數學<input id="Math" type="number" maxlength="2" min="0" max="15" value="0"/>
-    社會<input id="Social" type="number" maxlength="2" min="0" max="15" value="0"/>
-    自然<input id="Science" type="number" maxlength="2" min="0" max="15" value="0"/>
-    <button onclick='calculate()'>換算</button>
-    
-    <br/>
-    
-    國文<output id="Chinese_result" value="0" max="15"></output>
-    英文<output id="English_result" value="0" max="15"></output>
-    數學<output id="Math_result" value="0" max="15"></output>
-    社會<output id="Social_result" value="0" max="15"></output>
-    自然<output id="Science_result" value="0" max="15"></output>
+    <main role="main" class="inner cover">
+    <section>
+    <div class="text-center">
+    	國文<input id="Chinese" type="number" maxlength="2" min="0" max="15" value="0"/>&nbsp;
+    	英文<input id="English"type="number" maxlength="2" min="0" max="15" value="0"/>&nbsp;
+    	數學<input id="Math" type="number" maxlength="2" min="0" max="15" value="0"/>&nbsp;
+    	社會<input id="Social" type="number" maxlength="2" min="0" max="15" value="0"/>&nbsp;
+    	自然<input id="Science" type="number" maxlength="2" min="0" max="15" value="0"/>&nbsp;
+    	<button onclick='calculate()'>換算</button>
+    	
+    	<br/><br/><br/><br/>
+    	
+    	國文<output id="Chinese_result" value="0" max="15"></output>&nbsp;&nbsp;&nbsp;
+    	英文<output id="English_result" value="0" max="15"></output>&nbsp;&nbsp;&nbsp;
+    	數學<output id="Math_result" value="0" max="15"></output>&nbsp;&nbsp;&nbsp;
+    	社會<output id="Social_result" value="0" max="15"></output>&nbsp;&nbsp;&nbsp;
+    	自然<output id="Science_result" value="0" max="15"></output>&nbsp;&nbsp;&nbsp;
+    </div>
+    </section>
+    </main>
     
     </body>
-    
+    <!--footer-->
+    <footer class="mastfoot mt-auto">
+    <div class="inner">
+    	<li>&copy; 嘉義高中314班 呂昀叡 許登翔 黃思翰 黃凱嘻 蘇崇傑 共同完成</li>
+    </div>
+    </footer>
 </html>
